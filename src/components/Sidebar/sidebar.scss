@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  background-color: blue;
+  background-color: #0b0c10;
+  // overflow: hidden;
   z-index: 1;
 
   
@@ -23,20 +24,21 @@
       align-items: center;
       white-space: nowrap;
       transform: rotate(90deg);
-      padding: 10px;
-      color: #fff; // Default text color
+      color: #fff;
       transition: color 0.3s ease-in-out;
       text-decoration: none;
-      padding: 40px 0px;
+      padding: 25px;
       font-size: 25px;
       margin-top: 30px;
+      margin-bottom: 40px;
 
       &.selected {
-    color: #ffcc00; 
+    color: #66fcf1;
+  border-top: 1.5px solid #66fcf1;
   }
   
       &:hover {
-        color: #ffcc00;
+        color: #66fcf1;
       }
 
     }

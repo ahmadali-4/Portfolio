@@ -1,9 +1,11 @@
 const colors = {
     primary: '#0afe9c',
-    heading: '#ebecf3',
-    text: '#c3c3c8',
-    background: '#101011',
+    heading: '#66fcf1',
+    text: '#c5c6c7',
+    background: '#1f2833',
     navbarColor: '#080808',
+    Sidebar:"#0b0c10",
+    border:'#45a29e',
   };
   
   const font = {

@@ -7,6 +7,7 @@ export const About = () => {
     <div className="about-container">
       <div className="headline">
         <div className="line"></div>
+        <div className="circle"></div>
         <h3>About</h3>
       </div>
       <div className="text-wrapper">
@@ -57,7 +58,9 @@ export const About = () => {
             </div>
             <div className="about-items">
             {skills.map(item => (
-          <li className="skill-data" key={item.id}>{item.name}</li>
+          <div className="item-wrapper">
+            <li className="skill-data" key={item.id}>{item.name}</li>
+          </div>
         ))}
             </div>
           </div>

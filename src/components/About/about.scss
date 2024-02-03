@@ -1,10 +1,10 @@
 .about-container {
   height: 100vh;
   max-width: 1250px;
-  background-color: bisque;
-  padding: 75px 50px;
-//   position: relative;
-//   overflow: hidden;
+  background-color: #080808fd;
+  padding: 75px 60px;
+  position: relative;
+  overflow: hidden;
   .headline {
     display: flex;
     flex-direction: row-reverse;
@@ -13,12 +13,20 @@
     .line {
       margin-top: 20px;
       width: 78%;
-      height: 2px;
-      background-color: #000;
+      height: 1px;
+      background-color: white;
       transform: rotate(180deg);
+    }
+    .circle{
+      background-color: #66fcf1;
+      margin-top: 30px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
     }
     h3 {
       font-size: 75px;
+      color: white;
     }
   }
 
@@ -41,18 +49,24 @@
             justify-content: flex-start;
             margin-top: 35px;
             h2{
-                font-size: 34px;
+                font-size: 28px;
+                font-weight: normal;
+                color: #66fcf1;
             }
 
             .link-icon{
-                margin-top: 8px;
+                // margin-top: 8px;
                 margin-left: 30px;
                 a{
                     font-size: 20px;
                     padding: 10px;
                     text-decoration: none;
 
+                    &:hover {
+                      color: #66fcf1;
+                    }
                 }
+
             }
         }
     }
@@ -61,21 +75,24 @@
         margin-top: 15px;
         margin-left: 20px;
         .skill-head{
+          // width: 50%;
             .skill-title{
                 h3{
                     font-size: 25px;
+                    color: white;
                     font-weight: bold;
                 }
             }
             .about-items{
                 display: flex;
+                flex-wrap: wrap;
                 margin-top: 20px;
                 gap: 20px;
-                width: 50%;
                 .skill-data{
                     border-radius: 50px;
-                    background-color: #000;
-                    color: antiquewhite;
+                    background-color: #2b1f1f57;
+                    backdrop-filter: blur(10px);
+                    color: white;
                     padding: 10px;
                     font-size: 20px;
                     list-style-type: none;
