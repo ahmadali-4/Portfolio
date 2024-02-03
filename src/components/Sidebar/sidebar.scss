@@ -7,16 +7,14 @@
   // overflow: hidden;
   z-index: 1;
 
-  
-  .wrapper{
-
+  .wrapper {
     display: flex;
     flex-direction: column;
 
-    .icon{
+    .icon {
       margin-top: 80px;
     }
-    
+
     .rotated-text {
       display: flex;
       flex: 1;
@@ -33,15 +31,13 @@
       margin-bottom: 40px;
 
       &.selected {
-    color: #66fcf1;
-  border-top: 1.5px solid #66fcf1;
-  }
-  
+        color: #66fcf1;
+        border-top: 1.5px solid #66fcf1;
+      }
+
       &:hover {
         color: #66fcf1;
       }
-
     }
   }
-
 }

@@ -10,7 +10,7 @@ const App = () => {
     <div className="container">
       <Sidebar />
       <div className="content">
-          <Navbar />
+        <Navbar />
         <section>
           <Hero />
         </section>
@@ -20,7 +20,9 @@ const App = () => {
         <section id="Projects">
           <Project />
         </section>
-        <section id="Contact"> <Contact/> </section>
+        <section id="Contact">
+          <Contact />
+        </section>
       </div>
     </div>
   );

@@ -1,5 +1,58 @@
-.project-container{
-    height: 100vh;
+.contact-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #080808f3;
+
+  .contact-wrapper {
+    height: 100%;
     width: 100%;
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    .contact-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      h3 {
+        color: white;
+        font-size: 64px;
+        font-weight: 900;
+      }
+      .circle{
+        background-color: #66fcf1;
+      margin-top: 40px;
+      margin-left: 5px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      }
+    }
+    .contact-sub {
+      margin-top: 10px;
+      text-align: center;
+      p {
+        font-size: 20px;
+        font-weight: 100;
+        a {
+          text-decoration: none;
+          color: #66fcf1;
+        }
+      }
+    }
+    .contact-email {
+      margin-top: 10px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        span {
+            font-size: 24px;
+          font-weight: 900;
+          &:hover{
+            color: #66fcf1;
+          }
+        }
+      }
+    }
+  }
 }
