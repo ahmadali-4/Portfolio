@@ -10,4 +10,12 @@ const colors = {
     fontFamily: 'Poppins',
   };
   
-  export  default {colors, font};
+  const skills = [
+    { id: 1, name: 'HTML' },
+    { id: 2, name: 'CSS' },
+    { id: 3, name: 'React' },
+    { id: 4, name: 'HTML' },
+    { id: 5, name: 'CSS' },
+    { id: 6, name: 'React' },
+  ]
+  export  default skills;
