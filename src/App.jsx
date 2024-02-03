@@ -4,7 +4,7 @@ import { Hero } from "./components/Home/Hero";
 import { Navbar } from "./components/Navbar/navbar";
 import { Project } from "./components/Projects/Project";
 import { Sidebar } from "./components/Sidebar/Sidebar";
-
+import { Contact } from "./components/Contact/Contact";
 const App = () => {
   return (
     <div className="container">
@@ -20,7 +20,7 @@ const App = () => {
         <section id="Projects">
           <Project />
         </section>
-        <section id="Contact">Contact</section>
+        <section id="Contact"> <Contact/> </section>
       </div>
     </div>
   );
