@@ -1,5 +1,7 @@
+@import "../../app.scss";
+
 .nav-container {
-  width: 100%;
+  width: 1250px;
   height: 80px;
   position: fixed;
   top: 0;
@@ -7,24 +9,34 @@
   backdrop-filter: blur(20px);
   display: flex;
   z-index: 3;
-
+  @include tablet {
+    @include mobile {
+      width: calc(1250px - 738px);
+    }
+  }
   .wrapper {
     flex: 1;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
     .icon {
       color: white;
       .glow-icon {
-        
         margin-right: 20px;
         font-size: 24px;
         cursor: pointer;
       }
-      
+
       &:hover {
         color: #66fcf1;
+      }
+
+      @include tablet {
+        @include mobile {
+          margin-left: 20px;
+        }
       }
     }
     .nav-btn {
@@ -43,6 +55,21 @@
         &:hover {
           transform: scale(1.1);
         }
+      }
+      @include tablet {
+        @include mobile {
+          width: calc(1249px - 738px);
+          margin-left: auto;
+
+          margin-right: auto;
+        }
+      }
+    }
+
+    @include tablet {
+      @include mobile {
+        width: calc(1249px - 738px);
+        // justify-content: space-around;
       }
     }
   }

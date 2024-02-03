@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .about-container {
   height: 100vh;
   max-width: 1250px;
@@ -5,6 +6,13 @@
   padding: 75px 60px;
   position: relative;
   overflow: hidden;
+
+  @include tablet {
+    @include mobile {
+      max-width: calc(1250px - 728px);
+      height: auto;
+    }
+  }
 
   .headline {
     display: flex;
@@ -33,6 +41,20 @@
       font-weight: 900;
       color: white;
     }
+
+    @include tablet {
+      @include mobile {
+        .line{
+          width: 78%;
+        }
+        .circle{
+          margin-top: 20px;
+        }
+        h3{
+          font-size: 35px;
+        }
+      }
+    }
   }
 
   .text-wrapper{
@@ -40,13 +62,27 @@
     grid-template-columns: 60% 40%;
       margin-top: 20px;
       justify-content: space-between;
+
+
+      @include tablet {
+        @include mobile {
+          grid-template-columns: 100%;
+          height: auto;
+        }
+      }  
     .text-container{
         width: 100%;
         .text{
             p{
                 padding-top: 20px;
                 font-size: 22px;
-                font-weight: 100;
+                font-weight: lighter;
+
+                @include tablet {
+                  @include mobile {
+                    font-size: 16px;
+                  }
+                }
             }
         }
         .link{
@@ -58,6 +94,11 @@
                 font-size: 28px;
                 font-weight: normal;
                 color: #66fcf1;
+                @include tablet {
+                  @include mobile {
+                    font-size: 18px;
+                  }
+                }
             }
 
             .link-icon{
@@ -73,6 +114,13 @@
                       color: #66fcf1;
                     }
                 }
+                @include tablet {
+                  @include mobile {
+                    a{
+                      font-size: 16px;
+                    }
+                  }
+                }
 
             }
         }
@@ -81,12 +129,23 @@
         width: 100%;
         margin-top: 15px;
         margin-left: 20px;
+        @include tablet {
+          @include mobile {
+            margin-top: 30px;
+            margin-left: 0;
+          }
+        }
         .skill-head{
             .skill-title{
                 h3{
                     font-size: 25px;
                     color: white;
                     font-weight: 900;
+                    @include tablet {
+                      @include mobile {
+                        font-size: 18px;
+                      }
+                    }
                 }
             }
             .about-items{
@@ -94,6 +153,11 @@
                 flex-wrap: wrap;
                 margin-top: 20px;
                 gap: 20px;
+                @include tablet {
+                  @include mobile {
+                    margin-top: 30px;
+                  }
+                }
                 .skill-data{
                     border-radius: 50px;
                     background-color: #1f1d1dad;
@@ -102,6 +166,11 @@
                     padding: 10px;
                     font-size: 20px;
                     list-style-type: none;
+                    @include tablet {
+                      @include mobile {
+                        font-size: 16px;
+                      }
+                    }
 
                 }
 

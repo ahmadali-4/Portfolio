@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero-container {
   height: 100vh;
   width: 100%;
@@ -18,6 +20,13 @@
         font-weight: 900;
         color: white;
       }
+
+      @include tablet {
+        @include mobile {
+          margin-top: 0;
+          font-size: 22px;
+        }
+      }
     }
     .sub-title {
       font-size: 50px;
@@ -31,12 +40,22 @@
         color: #66fcf1;
         text-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
       }
+      @include tablet {
+        @include mobile {
+          font-size: 24px;
+        }
+      }
     }
     p {
       margin-top: 20px;
       width: 70%;
       font-size: 25px;
       font-weight: normal;
+      @include tablet {
+        @include mobile {
+          font-size: 16px;
+        }
+      }
     }
     button {
       margin-top: 20px;
@@ -54,6 +73,19 @@
       &:hover {
         transform: scale(1.1);
       }
+      @include tablet {
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @include tablet {
+      @include mobile {
+        padding-top: 220px;
+    padding-left: 60px;
+      }
     }
   }
+
 }

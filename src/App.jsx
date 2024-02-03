@@ -17,12 +17,12 @@ const App = () => {
         <section id="About">
           <About />
         </section>
-        <section id="Projects">
+        {/* <section id="Projects">
           <Project />
-        </section>
-        <section id="Contact">
+        </section> */}
+        {/* <section id="Contact">
           <Contact />
-        </section>
+        </section> */}
       </div>
     </div>
   );

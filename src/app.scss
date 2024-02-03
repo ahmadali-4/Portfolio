@@ -1,28 +1,41 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #c5c6c7;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: flex;
   height: 100vh;
-  
 
   .content {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 80px;
-    
-  
+
     section {
       flex: 1;
     }
-}
+  }
 }
 
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media ( max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

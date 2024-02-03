@@ -14,7 +14,7 @@ export const About = () => {
         <div className="text-container">
           <div className="text">
             <p>
-              Hey! I'm Bob, if you haven't already gathered that by now. I'm a
+              Hey! I'm Ahmad Ali, if you haven't already gathered that by now. I'm a
               painter turned software engineer from Daytona, Florida. I
               specialize in the backend, primarily Node and Rust, but love
               building with whatever tools are right for the job.
