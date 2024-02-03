@@ -1,0 +1,45 @@
+.sidebar-container {
+  width: 80px;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-color: blue;
+  z-index: 1;
+
+  
+  .wrapper{
+
+    display: flex;
+    flex-direction: column;
+
+    .icon{
+      margin-top: 80px;
+    }
+    
+    .rotated-text {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      transform: rotate(90deg);
+      padding: 10px;
+      color: #fff; // Default text color
+      transition: color 0.3s ease-in-out;
+      text-decoration: none;
+      padding: 40px 0px;
+      font-size: 25px;
+      margin-top: 30px;
+
+      &.selected {
+    color: #ffcc00; 
+  }
+  
+      &:hover {
+        color: #ffcc00;
+      }
+
+    }
+  }
+
+}
