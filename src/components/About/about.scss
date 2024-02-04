@@ -1,16 +1,22 @@
 @import "../../app.scss";
+
+
 .about-container {
   height: 100vh;
-  max-width: 1250px;
-  background-color: #080808fd;
+  max-width: 1185px;
+  background-color: #080808f3;
   padding: 75px 60px;
   position: relative;
   overflow: hidden;
 
   @include tablet {
+    height: calc(100vh + 100px);
     @include mobile {
-      max-width: calc(1250px - 728px);
+      max-width: calc(1250px - 512px);
+      height: 100vh;
+      width: auto;
       height: auto;
+
     }
   }
 
@@ -32,8 +38,8 @@
       background-color: #66fcf1;
       margin-top: 45px;
       margin-left: 5px;
-      height: 15px;
-      width: 15px;
+      height: 20px;
+      width: 20px;
       border-radius: 50%;
     }
     h3 {
@@ -49,6 +55,9 @@
         }
         .circle{
           margin-top: 20px;
+      margin-left: 5px;
+      height: 10px;
+      width: 15px;
         }
         h3{
           font-size: 35px;

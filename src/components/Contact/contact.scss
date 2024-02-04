@@ -1,7 +1,16 @@
+@import "../../app.scss";
 .contact-container {
   height: 100vh;
   width: 100%;
   background-color: #080808f3;
+
+  @include tablet {
+    height: calc(100vh + 300px);
+    @include mobile{
+      height: 100vh;
+    }
+  }
+  
 
   .contact-wrapper {
     height: 100%;
@@ -10,6 +19,8 @@
     flex-direction: column;
     place-items: center;
     justify-content: center;
+    text-align: center;
+    
     .contact-title {
         display: flex;
         flex-direction: row;
@@ -21,11 +32,29 @@
       }
       .circle{
         background-color: #66fcf1;
-      margin-top: 40px;
-      margin-left: 5px;
-      height: 15px;
-      width: 15px;
-      border-radius: 50%;
+        margin-top: 35px;
+        margin-left: 5px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+
+      @include tablet {
+        
+    
+        @include mobile {
+          max-width: calc(100% - 50px);
+          padding: 0 10px;
+          h3{
+            font-size: 54px;
+          }
+          .circle{
+            margin-top: 35px;
+        margin-left: 5px;
+        height: 10px;
+        width: 10px;
+          }
+        }
       }
     }
     .contact-sub {
@@ -37,6 +66,23 @@
         a {
           text-decoration: none;
           color: #66fcf1;
+        }
+      }
+      @include tablet {
+        
+    
+        @include mobile {
+          p{
+            margin-left: 50px;
+            width: 80%;
+            font-size: 16px;
+          }
+          .circle{
+            margin-top: 35px;
+        margin-left: 5px;
+        height: 10px;
+        width: 10px;
+          }
         }
       }
     }
@@ -51,6 +97,14 @@
           &:hover{
             color: #66fcf1;
           }
+        }
+      }
+    
+      @include tablet {
+        
+    
+        @include mobile {
+          margin-right: 50px;
         }
       }
     }

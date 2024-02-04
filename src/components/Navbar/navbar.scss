@@ -1,28 +1,37 @@
 @import "../../app.scss";
 
 .nav-container {
-  width: 1250px;
+  width: 100%;
+  max-width: 1185px;
   height: 80px;
   position: fixed;
   top: 0;
   background-color: rgba(49, 49, 49, 0.082);
   backdrop-filter: blur(20px);
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   z-index: 3;
+
   @include tablet {
+    max-width: calc(100% - 50px);
+    padding: 0 10px;
+
     @include mobile {
-      width: calc(1250px - 738px);
+      max-width: calc(100% - 50px);
+      padding: 0 10px;
     }
   }
+
+
   .wrapper {
-    flex: 1;
-    display: flex;
-    // flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
 
     .icon {
       color: white;
+      margin-left: 50px;
       .glow-icon {
         margin-right: 20px;
         font-size: 24px;
@@ -34,13 +43,15 @@
       }
 
       @include tablet {
+        
         @include mobile {
-          margin-left: 20px;
+          margin-left: 0;
         }
       }
     }
+
     .nav-btn {
-      margin-left: 560px;
+      margin-right: 50px;
       button {
         padding: 15px;
         font-weight: bold;
@@ -48,6 +59,7 @@
         background-color: transparent;
         border: 1.5px solid #66fcf1;
         box-shadow: 0 0 10px;
+        margin-right: 50px;
         cursor: pointer;
         border-radius: 5px;
         transition: transform 0.3s ease-in-out;
@@ -56,20 +68,13 @@
           transform: scale(1.1);
         }
       }
+
       @include tablet {
         @include mobile {
-          width: calc(1249px - 738px);
-          margin-left: auto;
-
-          margin-right: auto;
+          // max-width: 100%;
+          margin-left: 0;
+          margin-right: 50px;
         }
-      }
-    }
-
-    @include tablet {
-      @include mobile {
-        width: calc(1249px - 738px);
-        // justify-content: space-around;
       }
     }
   }

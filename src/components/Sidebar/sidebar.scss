@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .sidebar-container {
   width: 80px;
   position: fixed;
@@ -5,7 +7,13 @@
   height: 100vh;
   background-color: #0b0c10;
   // overflow: hidden;
-  z-index: 1;
+  z-index: 999;
+  @include tablet {
+    height: calc(100vh + 240px);
+    @include mobile{
+      height: 100vh;
+    }
+  }
 
   .wrapper {
     display: flex;
@@ -29,10 +37,11 @@
       font-size: 25px;
       margin-top: 30px;
       margin-bottom: 40px;
+      font-weight: lighter;
 
       &.selected {
         color: #66fcf1;
-        border-top: 1.5px solid #66fcf1;
+        border-top: 2.5px solid #66fcf1;
       }
 
       &:hover {
