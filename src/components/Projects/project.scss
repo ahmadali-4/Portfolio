@@ -3,7 +3,7 @@
 
 .project-container {
   height: auto;
-  max-width: 1250px;
+  max-width: 1200px;
   padding: 85px 60px;
   background-color: #080808f3;
   position: relative;
@@ -59,6 +59,7 @@
         }
         h3{
           font-size: 35px;
+          
         }
       }
     }
@@ -139,6 +140,8 @@
           p {
             font-size: 18px;
             font-weight: lighter;
+      color: white;
+
           }
           span {
             font-size: 18px;

@@ -3,7 +3,7 @@
 
 .about-container {
   height: 100vh;
-  max-width: 1185px;
+  max-width: 1200px;
   background-color: #080808f3;
   padding: 75px 60px;
   position: relative;
@@ -86,6 +86,8 @@
                 padding-top: 20px;
                 font-size: 22px;
                 font-weight: lighter;
+      color: white;
+
 
                 @include tablet {
                   @include mobile {

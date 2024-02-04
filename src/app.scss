@@ -2,8 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #c5c6c7;
   font-family: "Poppins", sans-serif;
+
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #080808f3;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #66fcf1;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #69b3a6;
+  }
 }
 
 .container {
@@ -15,6 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 80px;
+    margin-top: 0;
 
     section {
       flex: 1;

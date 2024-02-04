@@ -48,7 +48,7 @@ export const Sidebar = () => {
   return (
     <div className={`sidebar-container ${isScrolled ? 'scrolled' : ''}`}>
       <div className="wrapper">
-        <div className="icon"></div>
+        <div className="icon">A <div className='circle'></div></div>
         <a
           href="#About"
           className={`rotated-text ${selectedSection === 'About' ? 'selected' : ''}`}

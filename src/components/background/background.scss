@@ -1,0 +1,60 @@
+@import "../../app.scss";
+
+.background-container {
+  margin: 0;
+  padding: 0;
+  max-width: 1180px;
+  height: 98vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 0;
+
+  @include tablet {
+    // height: calc(100vh + 100px);
+      
+    @include mobile {
+      height: 100vh;
+      width: 85%;
+
+    }
+  }
+
+  .background-wrapper {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    font-size: 64px;
+    font-weight: lighter;
+    white-space: nowrap;
+    top: -50%;
+    padding: 10px 0;
+    transform: rotate(-30deg);
+    @include tablet {
+      // height: calc(100vh + 100px);
+      width: 50%;
+      @include mobile {
+        font-size: 34px;
+        top: 0;
+  
+      }
+    }
+
+    .icons {
+    padding-right: 10px;
+    // color: aliceblue;
+      color: rgb(0, 0, 0, 0.5);
+      transition: 1s;
+      user-select: none;
+      cursor: default;
+
+      &:hover{
+      transition: 0s;
+        color: #66fcf1;
+        text-shadow: 0 0 120px #66fcf1;
+      }
+    }
+  }
+}
