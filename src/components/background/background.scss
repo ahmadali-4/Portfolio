@@ -1,9 +1,7 @@
 @import "../../app.scss";
 
 .background-container {
-  margin: 0;
-  padding: 0;
-  max-width: 1190px;
+  max-width: 1180px;
   height: 100vh;
   position: absolute;
   display: flex;
@@ -12,18 +10,16 @@
   z-index: 0;
 
   @include tablet {
-    // height: calc(100vh + 100px);
+    height: 100vh;
       
     @include mobile {
-      height: 100vh;
-      width: 85%;
 
     }
   }
 
   .background-wrapper {
     position: relative;
-    width: 80%;
+    width: calc(100% - 50%);
     display: flex;
     flex-direction: row;
     font-size: 76px;
@@ -34,8 +30,9 @@
     margin: 0;
     transform: rotate(-30deg);
     @include tablet {
-      // height: calc(100vh + 100px);
-      width: 50%;
+      font-size: 34px;
+        top: 0;
+
       @include mobile {
         font-size: 34px;
         top: 0;

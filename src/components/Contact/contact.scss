@@ -3,14 +3,16 @@
   height: 100vh;
   max-width: 1200px;
   background-color: #080808f3;
+  margin-left: 80px;
 
   @include tablet {
-    height: calc(100vh + 300px);
-    @include mobile{
-      height: 100vh;
+    width: 100%;
+    height: 100vh;
+    margin-left: 0;
+
+    @include mobile {
     }
   }
-  
 
   .contact-wrapper {
     height: 100%;
@@ -20,17 +22,17 @@
     place-items: center;
     justify-content: center;
     text-align: center;
-    
+
     .contact-title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       h3 {
         color: white;
         font-size: 64px;
         font-weight: 900;
       }
-      .circle{
+      .circle {
         background-color: #66fcf1;
         margin-top: 35px;
         margin-left: 5px;
@@ -40,19 +42,17 @@
       }
 
       @include tablet {
-        
-    
         @include mobile {
-          max-width: calc(100% - 50px);
+          margin-left: 35px;
           padding: 0 10px;
-          h3{
-            font-size: 54px;
+          h3 {
+            font-size: 28px;
           }
-          .circle{
-            margin-top: 35px;
-        margin-left: 5px;
-        height: 10px;
-        width: 10px;
+          .circle {
+            margin-top: 15px;
+            margin-left: 5px;
+            height: 10px;
+            width: 10px;
           }
         }
       }
@@ -63,7 +63,7 @@
       p {
         font-size: 20px;
         font-weight: 100;
-      color: white;
+        color: white;
 
         a {
           text-decoration: none;
@@ -71,44 +71,42 @@
         }
       }
       @include tablet {
-        
-    
+        p {
+          width: 70%;
+          margin-left: 120px;
+          font-size: 18px;
+        }
         @include mobile {
-          p{
-            margin-left: 50px;
-            width: 80%;
-            font-size: 16px;
-          }
-          .circle{
-            margin-top: 35px;
-        margin-left: 5px;
-        height: 10px;
-        width: 10px;
+          p {
+            margin-left: 80px;
+            font-size: 14px;
           }
         }
       }
     }
     .contact-email {
+      font-size: 24px;
       margin-top: 10px;
+      text-align: center;
       cursor: pointer;
       a {
         text-decoration: none;
-      color: white;
+        color: white;
 
         span {
-            font-size: 24px;
           font-weight: 900;
-          &:hover{
+          &:hover {
             color: #66fcf1;
           }
         }
       }
-    
+
       @include tablet {
-        
-    
+        margin-right: 40px;
+
         @include mobile {
-          margin-right: 50px;
+          margin-left: 60px;
+          font-size: 18px;
         }
       }
     }

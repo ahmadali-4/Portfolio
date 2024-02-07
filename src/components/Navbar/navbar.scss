@@ -1,8 +1,7 @@
 @import "../../app.scss";
 
 .nav-container {
-  width: 100%;
-  max-width: 1185px;
+  max-width: 1195px;
   height: 80px;
   position: fixed;
   top: 0;
@@ -11,28 +10,29 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  z-index: 3;
+  z-index: 998;
+  margin-right: 80px;
+  width: 100%;
 
   @include tablet {
-    max-width: calc(100% - 50px);
-    padding: 0 10px;
-
+    margin-right: 0;
+    width: 100%;
     @include mobile {
-      max-width: calc(100% - 50px);
-      padding: 0 10px;
+      
     }
   }
-
-
+  
+  
   .wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
 
     .icon-container{
       display: flex;
-      margin-left: 80px;
+      margin-left: 90px;
 
 
       .icon {
@@ -48,6 +48,7 @@
         }
   
         @include tablet {
+          margin-left: 40px;
           
           @include mobile {
             margin-left: 0;

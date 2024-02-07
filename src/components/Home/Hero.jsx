@@ -5,7 +5,9 @@ import Background from "../background/Background";
 export const Hero = () => {
   return (
     <div className="hero-container">
-      <Background />
+      <div className="background-wrapper">
+        <Background />
+      </div>
 
         <div className="title">
           <h1>Hey, I'm Ahmad.</h1>

@@ -1,19 +1,16 @@
 @import "../../app.scss";
 
-
 .project-container {
   height: auto;
-  max-width: 1200px;
+  max-width: 1195px;
   padding: 85px 60px;
   background-color: #080808f3;
   position: relative;
+  margin-left: 80px;
 
   @include tablet {
-    height: calc(100% + 100px);
+    margin-left: 0;
     @include mobile {
-      max-width: calc(1250px - 520px);
-      width: auto;
-      height: auto;
     }
   }
 
@@ -23,6 +20,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    // margin-left: 80px;
 
     .project-line {
       margin-top: 20px;
@@ -44,39 +42,45 @@
       margin-left: 10px;
       color: white;
       font-weight: 900;
-      
     }
     @include tablet {
+      h3 {
+        font-size: 45px;
+      }
+      .project-circle {
+        margin-top: 25px;
+        margin-left: 5px;
+        height: 15px;
+        width: 17px;
+      }
       @include mobile {
-        .line{
+        .line {
           width: 78%;
         }
-        .project-circle{
+        .project-circle {
           margin-top: 15px;
-      margin-right: 5px;
-      height: 10px;
-      width: 15px;
+          margin-right: 5px;
+          height: 10px;
+          width: 15px;
         }
-        h3{
+        h3 {
           font-size: 35px;
-          
         }
       }
     }
   }
 
   .project-wrapper {
-    max-width: 1024px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;;
     place-items: center;
     gap: 50px;
+    // margin-left: 80px;
 
     @include tablet {
-    
+      grid-template-columns: 100%;
       @include mobile {
         grid-template-columns: 100%;
-        max-width: calc(1250px - 520px);
       }
     }
 
@@ -86,11 +90,13 @@
       border-radius: 5px;
 
       @include tablet {
+        width: 49vh;
+      height: 50vh;
+
         @include mobile {
           width: auto;
         }
       }
-      
 
       .image-box {
         background-color: rgba(29, 28, 28, 0.911);
@@ -140,8 +146,7 @@
           p {
             font-size: 18px;
             font-weight: lighter;
-      color: white;
-
+            color: white;
           }
           span {
             font-size: 18px;
