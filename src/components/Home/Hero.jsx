@@ -7,7 +7,6 @@ export const Hero = () => {
     <div className="hero-container">
       <Background />
 
-      <div className="wrapper">
         <div className="title">
           <h1>Hey, I'm Ahmad.</h1>
         </div>
@@ -21,9 +20,10 @@ export const Hero = () => {
           Explore my work to see how I bring creativity and innovation to life
           online.<br/>Let's connect and create something amazing together!🌐
         </p>
-        <div className="button">
+        <div className="Hero-button">
           <button>Contact me</button>
         </div>
+      <div className="wrapper">
       </div>
     </div>
   );

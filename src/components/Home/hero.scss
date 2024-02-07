@@ -9,7 +9,7 @@
   
 
   @include tablet {
-    height: calc(100vh + 100px);
+    // height: calc(100vh + 100px);
       
     @include mobile {
       height: 100vh;
@@ -19,6 +19,52 @@
   }
 
   .wrapper {
+    // width: 70%;
+    // position: relative;
+    // top: 220px;
+    // left: 100px;
+    // gap: 10px;
+    // // background-color: white;
+    // z-index: 0;
+    
+  }
+  .title {
+    
+   
+    width: 70%;
+  position: relative;
+  top: 220px;
+  left: 100px;
+  gap: 10px;
+  // background-color: white;
+  z-index: 0;
+
+    h1{
+      font-size: 62px;
+      font-weight: 900;
+      color: white;
+     
+    }
+
+  }
+  @include tablet {
+    h1{
+      
+    margin-top: 0;
+    font-size: 42px;
+
+    }
+    @include mobile {
+      top: 150px;
+  left: 40px;
+      h1{
+        margin-top: 0;
+      font-size: 32px;
+      }
+    }
+  }
+  .sub-title {
+    font-size: 50px;
     width: 70%;
     position: relative;
     top: 220px;
@@ -26,99 +72,83 @@
     gap: 10px;
     // background-color: white;
     z-index: 0;
-    
-    .title {
-      font-size: 52px;
-     
-      
 
-      h1{
-        font-weight: 900;
-        color: white;
-       
-      }
-
-    }
-    @include tablet {
-      h1{
-        
-      margin-top: 0;
-      font-size: 42px;
-
-      }
-      @include mobile {
-        top: 150px;
-    left: 40px;
-        h1{
-          margin-top: 0;
-        font-size: 32px;
-        }
-      }
-    }
-    .sub-title {
-      font-size: 50px;
-
-      h3 {
-        font-weight: normal;
-        color: white;
-      }
-      span {
-        font-weight: bold;
-        color: #66fcf1;
-        text-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
-      }
-      @include tablet {
-        font-size: 40px;
-        width: 80%;
-        @include mobile {
-          font-size: 28px;
-          width: 100%;
-        }
-      }
-    }
-    p {
-      margin-top: 20px;
-      width: 90%;
-      font-size: 25px;
+    h3 {
       font-weight: normal;
       color: white;
-      @include tablet {
-        width: 100%;
-        font-size: 20px;
-        @include mobile {
-          font-size: 18px;
-        }
-      }
     }
-    button {
-      margin-top: 20px;
-      padding: 20px 20px;
-      font-weight: 900;
-      font-size: 24px;
-      color: #080808f3;
-      background-color: #66fcf1;
-      border: 1px solid #66fcf1;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
-
-      
-      &:hover {
-        transform: scale(1.1);
-      }
-      @include tablet {
-        @include mobile {
-          font-size: 14px;
-        }
-      }
+    span {
+      font-weight: bold;
+      color: #66fcf1;
+      text-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
     }
-
     @include tablet {
+      font-size: 40px;
+      width: 80%;
       @include mobile {
-        padding-top: 220px;
-    padding-left: 60px;
+        font-size: 28px;
+        width: 100%;
       }
     }
   }
+  p {
+    width: 70%;
+    position: relative;
+    top: 220px;
+    left: 100px;
+    gap: 10px;
+    // background-color: white;
+    z-index: 0;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    @include tablet {
+      width: 100%;
+      font-size: 20px;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+  }
+  .Hero-button {
+    width: 70%;
+    position: relative;
+    top: 220px;
+    left: 100px;
+    gap: 10px;
+    // background-color: white;
+   button{
+    z-index: 0;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-weight: 900;
+    font-size: 24px;
+    color: #080808f3;
+    background-color: #66fcf1;
+    border: 1px solid #66fcf1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+    @include tablet {
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+   }
+  }
+
+  // @include tablet {
+  //   @include mobile {
+  //     padding-top: 220px;
+  // padding-left: 60px;
+  //   }
+  // }
 
 }
