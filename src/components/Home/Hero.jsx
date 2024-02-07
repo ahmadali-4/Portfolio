@@ -17,9 +17,9 @@ export const Hero = () => {
           </h3>
         </div>
         <p>
-          I've spent the last 5 years building and scaling software for some
-          pretty cool companies. I also teach people to paint online (incase
-          you've got an empty canvas layin' around 🎨). Let's connect!
+          A web developer committed to crafting compelling digital experiences.
+          Explore my work to see how I bring creativity and innovation to life
+          online.<br/>Let's connect and create something amazing together!🌐
         </p>
         <div className="button">
           <button>Contact me</button>

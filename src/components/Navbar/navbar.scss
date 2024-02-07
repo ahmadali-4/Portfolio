@@ -26,29 +26,39 @@
 
   .wrapper {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .icon {
-      color: white;
-      margin-left: 50px;
-      .glow-icon {
-        margin-right: 20px;
-        font-size: 24px;
-        cursor: pointer;
-      }
+    .icon-container{
+      display: flex;
+      margin-left: 80px;
 
-      &:hover {
-        color: #66fcf1;
-      }
 
-      @include tablet {
-        
-        @include mobile {
-          margin-left: 0;
+      .icon {
+        color: white;
+        .glow-icon {
+          margin-right: 20px;
+          font-size: 24px;
+          cursor: pointer;
+        }
+  
+        &:hover {
+          color: #66fcf1;
+        }
+  
+        @include tablet {
+          
+          @include mobile {
+            margin-left: 0;
+          }
         }
       }
+
+
     }
+
+
 
     .nav-btn {
       margin-right: 50px;

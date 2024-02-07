@@ -1,23 +1,26 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faUser,
-  faProjectDiagram,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
 import "./navbar.scss";
+import { IconGithub, IconLinkedin, IconUpwork } from "../../utils/IconsData";
 
 export const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="wrapper">
+        <div className="icon-container">
+
         <div className="icon">
-          <FontAwesomeIcon icon={faHome} className="glow-icon" />
-          <FontAwesomeIcon icon={faUser} className="glow-icon" />
-          <FontAwesomeIcon icon={faProjectDiagram} className="glow-icon" />
-          <FontAwesomeIcon icon={faEnvelope} className="glow-icon" />
+        <IconGithub  className="glow-icon" />
         </div>
+        <div className="icon">
+        <IconLinkedin className="glow-icon" />
+        </div>
+        <div className="icon">
+          <IconUpwork className="glow-icon" />
+
+        </div>
+        </div>
+          
+       
         <div className="nav-btn">
           <button>My Resume</button>
         </div>

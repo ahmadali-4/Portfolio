@@ -87,6 +87,10 @@
                 font-size: 22px;
                 font-weight: lighter;
       color: white;
+      span{
+        color: #66fcf1;
+        font-weight: 900;
+      }
 
 
                 @include tablet {
@@ -117,9 +121,13 @@
                 margin-left: 30px;
                 a{
                   color: white;
-                    font-size: 20px;
-                    padding: 10px;
-                    text-decoration: none;
+                  padding: 10px;
+                  text-decoration: none;
+                  
+                  .lnk-icons{
+                      font-size: 20px;
+
+                    }
 
                     &:hover {
                       color: #66fcf1;
